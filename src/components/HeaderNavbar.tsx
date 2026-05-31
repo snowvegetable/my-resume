@@ -32,28 +32,30 @@ export default function HeaderNavbar() {
       ref={navRef}
       className="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-sm border-b border-gray-800"
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-3">
-        <button
-          className="md:hidden text-2xl text-gray-300 p-1 border border-gray-800 rounded"
-          onClick={() => {
-            setIsOpen((val) => !val);
-          }}
-        >
-          {isOpen ? <TbX /> : <TbMenu2 />}
-        </button>
-
-        {/* 首頁Logo */}
-        <div className="text-xl font-bold font-mono text-cyan-400">
-          <a
-            href="#"
-            className="flex gap-2 items-center"
+      <div className=" px-6 py-4 flex flex-col md:justify-between md:flex-row  ">
+        <div className="flex justify-between">
+          <button
+            className="md:hidden text-2xl text-gray-300 p-1 border border-gray-800 rounded"
             onClick={() => {
-              setIsOpen(false);
+              setIsOpen((val) => !val);
             }}
           >
-            <TbTerminal2 />
-            <span>首頁</span>
-          </a>
+            {isOpen ? <TbX /> : <TbMenu2 />}
+          </button>
+
+          {/* 首頁Logo */}
+          <div className="text-xl font-bold font-mono text-cyan-400">
+            <a
+              href="#"
+              className="flex gap-2 items-center"
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
+              <TbTerminal2 />
+              <span>首頁</span>
+            </a>
+          </div>
         </div>
 
         {/* 導覽列內容列表 */}
@@ -71,9 +73,6 @@ export default function HeaderNavbar() {
               <a
                 href={`#${item.id.toLocaleLowerCase()}`}
                 className=" group-hover:text-cyan-400 transition-colors duration-300"
-                onClick={() => {
-                  setIsOpen(false);
-                }}
               >
                 {item.nameZh}
               </a>
