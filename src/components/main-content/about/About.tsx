@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import profile from '../../assets/images/profile.jpg';
-import GradientText from '../GradientText';
+import profile from '../../../assets/images/profile.jpg';
+import GradientText from '../../GradientText';
 
 const iconList = [
   { icon: FaGithub, href: 'https://github.com/snowvegetable?tab=repositories' },

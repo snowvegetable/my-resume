@@ -1,5 +1,5 @@
-import GradientText from '../GradientText';
 import ProjectCard from './components/ProjectCard';
+import GradientText from '../../GradientText';
 
 export default function Projects() {
   return (

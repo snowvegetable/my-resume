@@ -1,5 +1,5 @@
 import { FaCode, FaExternalLinkAlt } from 'react-icons/fa';
-import Card from '../../Card';
+import Card from '../../../Card';
 import SkillLabel from './SkillLabel';
 
 export default function ProjectCard({

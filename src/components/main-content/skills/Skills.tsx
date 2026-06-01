@@ -2,8 +2,8 @@ import SkillsCard from './components/SkillsCard';
 import { FaReact, FaJsSquare, FaGithub } from 'react-icons/fa';
 import { SiVite, SiEslint } from 'react-icons/si';
 import { RiTailwindCssFill } from 'react-icons/ri';
-import GradientText from '../GradientText';
-import Card from '../Card';
+import GradientText from '../../GradientText';
+import Card from '../../Card';
 
 export default function Skills() {
   return (

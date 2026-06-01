@@ -1,6 +1,6 @@
-import About from './about/About';
-import Projects from './projects/Projects';
-import Skills from './skills/Skills';
+import About from './main-content/about/About';
+import Projects from './main-content/projects/Projects';
+import Skills from './main-content/skills/Skills';
 
 export default function MainContent() {
   return (
