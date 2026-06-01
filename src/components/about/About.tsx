@@ -13,16 +13,16 @@ const iconList = [
 export default function About() {
   return (
     <section id="about" className="flex flex-col md:flex-row justify-between">
-      <div className="basis-1/2 text-center md:text-left">
-        <h1 className="text-5xl mb-10">
+      <div className="basis-1/2 text-center md:text-left flex flex-col gap-10 mb-10">
+        <h1 className="text-5xl">
           <span className="block mb-6">我是</span>
           <GradientText>宋鎮佑</GradientText>
         </h1>
-        <p className="text-2xl mb-10">
+        <p className="text-2xl ">
           前端工程師。專注於打造<GradientText>流暢和創新</GradientText>且符合
           RWD 的使用者體驗。熱衷於將複雜的需求轉化為簡潔的程式碼。
         </p>
-        <div className="mb-5 flex justify-center md:justify-start">
+        <div className="flex justify-center md:justify-start">
           <a
             href="#projects"
             className="block w-40 text-center py-4 text-black text-b bg-cyan-500  rounded-xl font-bold hover:bg-cyan-400 transition-all hover:shadow-[0_0_20px] hover:shadow-cyan-400/50"
@@ -31,7 +31,7 @@ export default function About() {
             <span>↓</span>
           </a>
         </div>
-        <div className="flex flex-row gap-5 justify-center md:justify-start mb-5">
+        <div className="flex flex-row gap-5 justify-center md:justify-start">
           {iconList.map((item) => (
             <a
               key={item.href}
@@ -44,6 +44,8 @@ export default function About() {
           ))}
         </div>
       </div>
+
+      {/* 大頭貼 */}
       <div className="basis-1/4 relative flex items-center justify-center">
         <div className="absolute w-60 md:w-80 aspect-square rounded-full bg-linear-to-r from-cyan-400 to-purple-500 blur-3xl opacity-30 animate-pulse"></div>
 
