@@ -12,7 +12,10 @@ const iconList = [
 
 export default function About() {
   return (
-    <section id="about" className="flex flex-col md:flex-row justify-between">
+    <section
+      id="about"
+      className="flex flex-col md:flex-row justify-between p-10"
+    >
       <div className="basis-1/2 text-center md:text-left flex flex-col gap-10 mb-10">
         <h1 className="text-5xl">
           <span className="block mb-6">我是</span>

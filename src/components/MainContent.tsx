@@ -1,9 +1,11 @@
 import About from './about/About';
+import Skills from './skills/Skills';
 
 export default function MainContent() {
   return (
-    <main className="m-10 md:m-30">
+    <main className="p-6 px-20 md:px-80 flex flex-col gap-10">
       <About />
+      <Skills />
     </main>
   );
 }
