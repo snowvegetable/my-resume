@@ -8,12 +8,12 @@ import Card from '../Card';
 export default function Skills() {
   return (
     <section id="skills">
-      <h1 className="text-5xl mb-10 text-center">
+      <h1 className="text-5xl mb-15 text-center">
         <GradientText>技術棧/Skills</GradientText>
       </h1>
       <div className="flex flex-col md:flex-row justify-around gap-10">
         <SkillsCard
-          className="flex-1"
+          className="flex-1 hover:shadow-[0_0_30px_--theme(--color-cyan-500/20%)]"
           title={'前端'}
           titleIcon={<FaReact />}
           titleColor="text-cyan-500"
@@ -24,7 +24,7 @@ export default function Skills() {
           ]}
         />
         <SkillsCard
-          className="flex-1"
+          className="flex-1 hover:shadow-[0_0_30px_--theme(--color-fuchsia-400/20%)]"
           title={'開發工具'}
           titleIcon={<SiVite />}
           titleColor="text-fuchsia-500"
@@ -34,9 +34,9 @@ export default function Skills() {
             { itemIcon: <SiEslint />, itemTitle: 'Eslint' },
           ]}
         />
-        <Card className="flex-1">
-          <div className="mb-5">
-            <h2 className="text-2xl text-gray-500 font-bold">核心</h2>
+        <Card className="flex-1 border  border-gray-800 hover:border-gray-700 transition-colors duration-300 ease-in-out hover:shadow-[0_0_30px_--theme(--color-emerald-500/20%)]">
+          <div className="mb-5 ">
+            <h2 className="text-2xl text-emerald-400 font-bold">核心</h2>
           </div>
           <div>
             <ul>

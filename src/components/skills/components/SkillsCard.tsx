@@ -24,7 +24,9 @@ export default function SkillsCard({
   className = '',
 }: SkillsCardType) {
   return (
-    <Card className={className}>
+    <Card
+      className={`border border-gray-800 hover:border-gray-700 transition-colors duration-300 ease-in-out ${className}`}
+    >
       <div className={`flex items-center gap-3 text-2xl mb-5  ${titleColor}`}>
         {titleIcon}
         <h2 className="font-bold">{title}</h2>
